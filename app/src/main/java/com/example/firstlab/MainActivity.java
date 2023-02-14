@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         int res = initRng();
-        byte [] rndString = randomBytes(16);
-        byte [] rndKey = randomBytes(30);
+        byte [] rndString = randomBytes(50);
+        byte [] rndKey = randomBytes(16);
         byte [] Encryption = encrypt(rndKey, rndString);
         byte [] Decryprion = decrypt(rndKey, Encryption);
 
