@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     // Used to load the 'firstlab' library on application startup.
     static {
         System.loadLibrary("firstlab");
+        System.loadLibrary("mbedcrypto");
     }
 
     private ActivityMainBinding binding;
